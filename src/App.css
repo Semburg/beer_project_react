@@ -1,38 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Source+Sans+Pro&family=Syne+Mono&display=swap');
+
 .App {
   text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#wrapper_front div{
+  text-align: center;
+  height: 50vh;
+  /* width:100vw; */
+  transition: all 1.2s;
+  color: black;
+  text-decoration: none;
+  font-family: 'Pangolin', cursive;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#wrapper_front div:hover{
+  color: #333;
+  background: #ddd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#wrapper_front h1{
+  text-decoration: none;
+  margin-top: 0;
+  padding-top: 30px;
+
+
+}
+.names_font{
+  font-family: 'Syne Mono', monospace;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#wrapper_front img{
+  /* width:90vw; */
+  height:30vh;
+}
+
+#header_button{
+  background:rgb(20, 181, 230);
+}
+
+#header_button img{
+  width:70px;
+  color:"white";
+}
+
+.item{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.item div{
+  display: inline-block;
+}
+
+.item img{
+  height:30vh;
+}
+
+.item_detail{
+  padding: 1rem;
+  padding-top: 3rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.item_detail div{
+  display: flex;
+  justify-content: space-between;
+  width:100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item_detail img{
+  width:50px;
+}
+
+.render_down{
+  opacity: 0.6;
 }
